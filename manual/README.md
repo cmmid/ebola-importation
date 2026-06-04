@@ -1,0 +1,1 @@
+This is an offline copy of the shared spreadsheet. Check for updates.
