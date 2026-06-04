@@ -1,0 +1,524 @@
+CaseID,Variable,Value,Source,Notes
+1,patient_name,Geoffrey Platt,"WP-UK; GOV-UK",
+1,year,1976,WP-UK,
+1,date_diagnosis_or_arrival,1976-11-05,WP-UK,Date of needlestick
+1,country_treatment,UK,WP-UK,
+1,city_treatment,"Porton Down, Wiltshire",WP-UK,
+1,hospital_treatment,"Microbiological Research Establishment isolation ward, Porton Down",WP-UK,
+1,country_infection,UK,WP-UK,Lab accident on UK soil
+1,infection_context,Lab needlestick handling samples from 1976 outbreak,"WP-UK; GOV-UK",
+1,arrival_mode,Already resident,WP-UK,
+1,occupation,Laboratory technician,WP-UK,
+1,ebola_species,Sudan ebolavirus,WP-UK,Samples were from the 1976 Sudan outbreak
+1,outcome,Recovered,WP-UK,"""Mild course"""
+1,outcome_date,Late Nov 1976,WP-UK,Approximate
+1,treatment_received,Human interferon + convalescent serum,WP-UK,
+1,onward_transmission,None,WP-UK,
+1,notes,Only UK lab-acquired EVD case ever,WP-UK,
+2,patient_name,6 animal handlers (Reston VA + Pennsylvania),"WP-Reston; INV; Stan",Names not public
+2,year,1989-1990,WP-Reston,
+2,date_diagnosis_or_arrival,Detected by serology 1990,WP-Reston,Monkey die-off began late 1989
+2,country_treatment,USA,WP-Reston,No clinical admission needed
+2,city_treatment,"Reston VA; Philadelphia PA",WP-Reston,Hazleton Research Products / Reston Primate Quarantine Unit
+2,hospital_treatment,None (CDC surveillance only),INV,"One handler with necropsy knife cut placed under surveillance, never ill"
+2,country_infection,USA,WP-Reston,Acquired in US quarantine facility
+2,infection_context,"Animal exposure — cynomolgus macaques imported from Ferlite facility, Luzon, Philippines","WP-Reston; Spr-Siena",
+2,arrival_mode,Already resident,WP-Reston,
+2,occupation,Animal handlers / lab workers,WP-Reston,
+2,ebola_species,Reston ebolavirus,"WP-Reston; mSph","Newly discovered strain, named for Reston VA"
+2,outcome,Asymptomatic seroconversion,"WP-Reston; mSph",All 6 healthy
+2,onward_transmission,None,mSph,Reston ebolavirus not pathogenic in humans
+2,contacts_traced,178 handlers serologically screened; 6 seropositive,WP-Reston,
+2,notes,"Subject of Richard Preston's ""The Hot Zone""",INV,
+3,patient_name,"4 animal handlers (Alice, TX)",WP-Reston,Names not public
+3,year,1989-1990,WP-Reston,
+3,country_treatment,USA,WP-Reston,No clinical admission
+3,city_treatment,"Alice, TX",WP-Reston,
+3,country_infection,USA,WP-Reston,
+3,infection_context,Same Philippine macaque source,"WP-Reston; Spr-Siena",
+3,occupation,Animal handlers,WP-Reston,
+3,ebola_species,Reston ebolavirus,WP-Reston,
+3,outcome,Asymptomatic seroconversion,WP-Reston,
+3,onward_transmission,None,WP-Reston,
+4,patient_name,(none — macaques only),Spr-Siena,
+4,year,1992,Spr-Siena,
+4,country_treatment,Italy,Spr-Siena,No human treatment
+4,city_treatment,Siena,Spr-Siena,
+4,hospital_treatment,n/a,Spr-Siena,Primate quarantine facility
+4,infection_context,Cynomolgus macaques from Ferlite (Philippines),Spr-Siena,Same exporter as 1989 US events
+4,ebola_species,Reston ebolavirus,Spr-Siena,
+4,outcome,No human infection detected,Spr-Siena,
+4,onward_transmission,None,Spr-Siena,
+4,notes,Sole Reston ebolavirus zoonotic event in Europe,Spr-Siena,
+5,patient_name,Swiss female ethologist (name never released),"Sci-TaiF; Geo-TaiF","Patient declined to be named; ""I don't want it to be my claim to fame"""
+5,year,1994,"WHO-95; JID-CdI",Onset late Nov 1994
+5,date_diagnosis_or_arrival,1994-12-01,Sci-TaiF,Date of evacuation to Switzerland
+5,country_treatment,Switzerland,Sci-TaiF,
+5,city_treatment,Basel,Geo-TaiF,Treated near University of Basel
+5,hospital_treatment,(not publicly specified),Sci-TaiF,Withheld to protect patient anonymity
+5,country_infection,Côte d'Ivoire,"WHO-95; JID-CdI",Taï Forest
+5,infection_context,Autopsied dead chimpanzee 16 Nov 1994 wearing only household gloves,"Sci-TaiF; JID-CdI",Two co-dissectors wore latex gloves and did not become infected
+5,arrival_mode,Medical evacuation,Sci-TaiF,
+5,occupation,Field primatologist,"Sci-TaiF; Geo-TaiF",PhD ethologist on Christophe Boesch's Univ. Basel team
+5,ebola_species,Taï Forest ebolavirus,"WHO-95; JID-CdI","Originally ""Ebola Côte d'Ivoire""; renamed 2002"
+5,outcome,Recovered,Sci-TaiF,~6 weeks of illness
+5,outcome_date,Mid-Jan 1995,Sci-TaiF,Full recovery
+5,onward_transmission,None,Sci-TaiF,
+5,notes,Only ever known human Taï Forest virus case,"WHO-95; Geo-TaiF",
+6,patient_name,(no human seroconversion reported),WP-Reston,
+6,year,1996,WP-Reston,
+6,country_treatment,USA,WP-Reston,
+6,city_treatment,"Alice, TX",WP-Reston,Texas Primate Center
+6,infection_context,Macaque shipment from Philippines,WP-Reston,
+6,ebola_species,Reston ebolavirus,WP-Reston,
+6,outcome,No reported human illness,WP-Reston,
+6,onward_transmission,None,WP-Reston,
+7,patient_name,Female virologist (name withheld),"Sci-Ham; JID-Ham",
+7,year,2009,JID-Ham,
+7,date_diagnosis_or_arrival,2009-03-12,JID-Ham,Date of needlestick
+7,country_treatment,Germany,JID-Ham,
+7,city_treatment,Hamburg,JID-Ham,
+7,hospital_treatment,Bernhard-Nocht-Institut BSL-4 then isolation ward,JID-Ham,
+7,country_infection,Germany,JID-Ham,Lab accident on German soil
+7,infection_context,Needlestick during animal experiment with Zaire ebolavirus + Freund's adjuvant,"JID-Ham; Sci-Ham",Stephan Günther directed the unit
+7,arrival_mode,Already resident,JID-Ham,
+7,occupation,Lab researcher (virologist),Sci-Ham,
+7,ebola_species,Zaire ebolavirus,JID-Ham,
+7,outcome,Recovered; never developed EVD,JID-Ham,
+7,treatment_received,Experimental rVSV-ZEBOV vaccine 48 h post-exposure,JID-Ham,First human use of rVSV-ZEBOV
+7,onward_transmission,None,JID-Ham,
+7,notes,Often described as Ebola exposure rather than EVD because patient remained asymptomatic; rVSV efficacy here informed later vaccine trials,JID-Ham,
+8,patient_name,Kent Brantly,"WP-US; CNN-Surv",
+8,year,2014,WP-US,
+8,date_diagnosis_or_arrival,2014-08-02,WP-US,Diagnosed in Liberia 26 Jul 2014; arrival Emory 2 Aug 2014
+8,country_treatment,USA,WP-US,
+8,city_treatment,"Atlanta, GA",WP-US,
+8,hospital_treatment,Emory University Hospital,WP-US,First US Ebola admission
+8,country_infection,Liberia,WP-US,
+8,infection_context,West Africa outbreak — clinical care,WP-US,"Samaritan's Purse / ELWA Hospital, Monrovia"
+8,arrival_mode,Medical evacuation (Phoenix Air Gulfstream III),WP-US,
+8,occupation,Physician (missionary),WP-US,
+8,ebola_species,Zaire ebolavirus,WP-US,West Africa 2014-16 outbreak
+8,outcome,Recovered,WP-US,
+8,outcome_date,2014-08-21,WP-US,Discharged
+8,treatment_received,ZMapp + convalescent plasma,WP-US,
+8,onward_transmission,None,WP-US,
+9,patient_name,Nancy Writebol,"WP-US; CNN-Surv",
+9,year,2014,WP-US,
+9,date_diagnosis_or_arrival,2014-08-05,WP-US,Arrival Emory
+9,country_treatment,USA,WP-US,
+9,city_treatment,"Atlanta, GA",WP-US,
+9,hospital_treatment,Emory University Hospital,WP-US,
+9,country_infection,Liberia,WP-US,
+9,infection_context,"West Africa outbreak — sanitation/hygienist role at ELWA, SIM mission",WP-US,
+9,arrival_mode,Medical evacuation,WP-US,
+9,occupation,Aid worker (hygienist); missionary,WP-US,
+9,ebola_species,Zaire ebolavirus,WP-US,
+9,outcome,Recovered,WP-US,
+9,outcome_date,2014-08-19,WP-US,Discharged
+9,treatment_received,ZMapp,WP-US,
+9,onward_transmission,None,WP-US,
+10,patient_name,Miguel Pajares,WP-ES,
+10,year,2014,WP-ES,
+10,date_diagnosis_or_arrival,2014-08-06,WP-ES,Evacuation date
+10,country_treatment,Spain,WP-ES,
+10,city_treatment,Madrid,WP-ES,
+10,hospital_treatment,Hospital Carlos III,WP-ES,
+10,country_infection,Liberia,WP-ES,
+10,infection_context,West Africa outbreak — volunteering at St John of God hospital,WP-ES,Brothers Hospitallers of St John of God
+10,arrival_mode,Medical evacuation,WP-ES,
+10,occupation,Religious brother; missionary,WP-ES,
+10,ebola_species,Zaire ebolavirus,WP-ES,
+10,outcome,Died,WP-ES,
+10,outcome_date,2014-08-12,WP-ES,
+10,onward_transmission,None reported,WP-ES,
+11,patient_name,William Pooley,"WP-UK; RoyalF",
+11,year,2014,WP-UK,
+11,date_diagnosis_or_arrival,2014-08-24,WP-UK,Arrival at Royal Free
+11,country_treatment,UK,WP-UK,
+11,city_treatment,London,WP-UK,
+11,hospital_treatment,Royal Free Hospital,"WP-UK; RoyalF",
+11,country_infection,Sierra Leone,WP-UK,
+11,infection_context,West Africa outbreak — volunteer at Kenema Government Hospital,WP-UK,
+11,arrival_mode,Medical evacuation (RAF C-17),WP-UK,
+11,occupation,Nurse; aid worker,WP-UK,
+11,ebola_species,Zaire ebolavirus,WP-UK,
+11,outcome,Recovered,WP-UK,
+11,outcome_date,2014-09-03,WP-UK,Discharged
+11,treatment_received,ZMapp,WP-UK,
+11,onward_transmission,None,WP-UK,
+12,patient_name,Rick Sacra,"WP-US; CNN-Surv; Neb",
+12,year,2014,WP-US,
+12,date_diagnosis_or_arrival,2014-09-05,WP-US,Arrival at Nebraska
+12,country_treatment,USA,WP-US,
+12,city_treatment,"Omaha, NE",WP-US,
+12,hospital_treatment,Nebraska Medical Center Biocontainment Unit,Neb,
+12,country_infection,Liberia,WP-US,
+12,infection_context,"West Africa outbreak — obstetric care; ELWA, SIM",WP-US,
+12,arrival_mode,Medical evacuation,WP-US,
+12,occupation,Physician; missionary,WP-US,
+12,ebola_species,Zaire ebolavirus,WP-US,
+12,outcome,Recovered,WP-US,
+12,outcome_date,2014-09-25,WP-US,Discharged
+12,treatment_received,TKM-Ebola + convalescent plasma (from Brantly),WP-US,
+12,onward_transmission,None,WP-US,
+13,patient_name,Ian Crozier,"WP-Croz; WP-US",
+13,year,2014,WP-Croz,
+13,date_diagnosis_or_arrival,2014-09-09,WP-Croz,Arrival at Emory
+13,country_treatment,USA,WP-Croz,
+13,city_treatment,"Atlanta, GA",WP-Croz,
+13,hospital_treatment,Emory University Hospital,WP-Croz,
+13,country_infection,Sierra Leone,WP-Croz,
+13,infection_context,West Africa outbreak — WHO deployment at Kenema Govt Hospital,WP-Croz,
+13,arrival_mode,WHO medical evacuation,WP-Croz,
+13,occupation,Physician (WHO consultant),WP-Croz,
+13,ebola_species,Zaire ebolavirus,WP-Croz,
+13,outcome,Recovered,WP-Croz,"40-day ICU stay, ventilated, dialysed"
+13,outcome_date,2014-10-19,WP-Croz,Discharged
+13,onward_transmission,None,WP-Croz,
+13,notes,Subsequently developed uveitis with viable virus recovered from anterior chamber of eye — landmark case for EVD persistence in immune-privileged sites,WP-Croz,
+14,patient_name,Manuel García Viejo,WP-ES,
+14,year,2014,WP-ES,
+14,date_diagnosis_or_arrival,2014-09-21,WP-ES,Evacuation date
+14,country_treatment,Spain,WP-ES,
+14,city_treatment,Madrid,WP-ES,
+14,hospital_treatment,Hospital Carlos III,WP-ES,
+14,country_infection,Sierra Leone,WP-ES,
+14,infection_context,"West Africa outbreak — medical director, St John of God Hospital, Lunsar",WP-ES,
+14,arrival_mode,Medical evacuation,WP-ES,
+14,occupation,Physician; missionary,WP-ES,
+14,ebola_species,Zaire ebolavirus,WP-ES,
+14,outcome,Died,WP-ES,
+14,outcome_date,2014-09-25,WP-ES,
+14,onward_transmission,Yes — to Teresa Romero (CaseID 18),WP-ES,Sole confirmed nosocomial chain in Europe
+15,patient_name,"Senegalese WHO epidemiologist (~36 y, male; name withheld)","PubMed-DE; NCBI-DE; NBC-DE",
+15,year,2014,PubMed-DE,
+15,date_diagnosis_or_arrival,2014-08-27,NCBI-DE,Arrival at UKE Hamburg
+15,country_treatment,Germany,NCBI-DE,
+15,city_treatment,Hamburg,NCBI-DE,
+15,hospital_treatment,Universitätsklinikum Hamburg-Eppendorf (UKE),NCBI-DE,
+15,country_infection,Sierra Leone,NBC-DE,
+15,infection_context,West Africa outbreak — WHO field deployment,NCBI-DE,
+15,arrival_mode,Medical evacuation,NBC-DE,
+15,occupation,Epidemiologist (WHO),NCBI-DE,
+15,ebola_species,Zaire ebolavirus,PubMed-DE,
+15,outcome,Recovered,"PubMed-DE; NCBI-DE",
+15,outcome_date,2014-10-04,PubMed-DE,
+15,onward_transmission,None,PubMed-DE,
+15,notes,First Ebola patient treated in Germany during the West Africa outbreak,NBC-DE,
+16,patient_name,Ugandan physician (name withheld in DE press),"TL-DE; MX-Frank",
+16,year,2014,TL-DE,
+16,date_diagnosis_or_arrival,2014-10-03,TL-DE,Arrival in Frankfurt
+16,country_treatment,Germany,TL-DE,
+16,city_treatment,Frankfurt,TL-DE,
+16,hospital_treatment,Universitätsklinikum Frankfurt,TL-DE,
+16,country_infection,Sierra Leone,TL-DE,
+16,infection_context,West Africa outbreak — working with NGO Emergency at Lakka,"TL-DE; MX-Frank",
+16,arrival_mode,Medical evacuation,TL-DE,
+16,occupation,Physician,TL-DE,
+16,ebola_species,Zaire ebolavirus,TL-DE,
+16,outcome,Recovered,MX-Frank,
+16,outcome_date,2014-12-19,MX-Frank,Discharged after ~11 weeks
+16,onward_transmission,None,MX-Frank,
+17,patient_name,Ashoka Mukpo,"WP-US; CNN-Surv",
+17,year,2014,WP-US,
+17,date_diagnosis_or_arrival,2014-10-06,WP-US,Arrival Nebraska
+17,country_treatment,USA,WP-US,
+17,city_treatment,"Omaha, NE",WP-US,
+17,hospital_treatment,Nebraska Medical Center Biocontainment Unit,"WP-US; Neb",
+17,country_infection,Liberia,WP-US,
+17,infection_context,West Africa outbreak — freelance journalism for NBC News,WP-US,
+17,arrival_mode,Medical evacuation,WP-US,
+17,occupation,Photojournalist,WP-US,
+17,ebola_species,Zaire ebolavirus,WP-US,
+17,outcome,Recovered,WP-US,
+17,outcome_date,2014-10-21,WP-US,Discharged
+17,treatment_received,Brincidofovir + convalescent plasma,WP-US,
+17,onward_transmission,None,WP-US,
+18,patient_name,María Teresa Romero Ramos,WP-ES,
+18,year,2014,WP-ES,
+18,date_diagnosis_or_arrival,2014-10-06,WP-ES,Date of positive test
+18,country_treatment,Spain,WP-ES,
+18,city_treatment,Alcorcón then Madrid,WP-ES,Tested at Alcorcón; treated at Carlos III
+18,hospital_treatment,Hospital Universitario Fundación Alcorcón then Hospital Carlos III,WP-ES,
+18,country_infection,Spain,WP-ES,Acquired on Spanish soil
+18,infection_context,Nosocomial — cared for García Viejo (CaseID 14) at Carlos III,WP-ES,PPE breach during sweat-wipe after garment removal
+18,arrival_mode,Already resident,WP-ES,
+18,occupation,Auxiliary nurse,WP-ES,
+18,ebola_species,Zaire ebolavirus,WP-ES,
+18,outcome,Recovered,WP-ES,
+18,outcome_date,2014-10-21,WP-ES,Declared EVD-free
+18,onward_transmission,None,WP-ES,
+18,contacts_traced,"~50 contacts monitored; 7 isolated, all remained negative",WP-ES,
+18,notes,First case of Ebola transmission outside Africa in the 2014-16 outbreak,WP-ES,
+19,patient_name,Silje Lehne Michalsen,"TL-NO; MSF-NO",
+19,year,2014,TL-NO,
+19,date_diagnosis_or_arrival,2014-10-07,MSF-NO,Symptoms 4 Oct; flown home 7 Oct
+19,country_treatment,Norway,TL-NO,
+19,city_treatment,Oslo,TL-NO,
+19,hospital_treatment,"Oslo Universitetssykehus, Ullevål",TL-NO,
+19,country_infection,Sierra Leone,MSF-NO,
+19,infection_context,West Africa outbreak — MSF,MSF-NO,Working in Bo
+19,arrival_mode,Medical evacuation,MSF-NO,
+19,occupation,Physician (MSF),MSF-NO,
+19,ebola_species,Zaire ebolavirus,MSF-NO,
+19,outcome,Recovered,TL-NO,
+19,outcome_date,2014-10-20,TL-NO,Discharged
+19,treatment_received,ZMapp,MSF-NO,
+19,onward_transmission,None,TL-NO,
+19,notes,Sole Norwegian Ebola case ever,TL-NO,
+20,patient_name,Nina Pham,"WP-US; CDC-MMWR",
+20,year,2014,WP-US,
+20,date_diagnosis_or_arrival,2014-10-11,WP-US,Diagnosis date
+20,country_treatment,USA,WP-US,
+20,city_treatment,"Dallas, TX then Bethesda, MD",WP-US,Transferred to NIH 16 Oct
+20,hospital_treatment,Texas Health Presbyterian then NIH Clinical Center,WP-US,
+20,country_infection,USA,WP-US,Acquired on US soil
+20,infection_context,Nosocomial — cared for Thomas Eric Duncan (CaseID 21),"WP-US; CDC-MMWR",
+20,arrival_mode,Already resident,WP-US,
+20,occupation,Nurse,WP-US,
+20,ebola_species,Zaire ebolavirus,WP-US,
+20,outcome,Recovered,WP-US,
+20,outcome_date,2014-10-24,WP-US,Discharged from NIH
+20,onward_transmission,None,CDC-MMWR,
+21,patient_name,Thomas Eric Duncan,"WP-US; CDC-Mus; CDC-MMWR",
+21,year,2014,WP-US,
+21,date_diagnosis_or_arrival,2014-09-30,CDC-Mus,Diagnosis 30 Sep; initial ED visit 25 Sep; US arrival 20 Sep
+21,country_treatment,USA,WP-US,
+21,city_treatment,"Dallas, TX",WP-US,
+21,hospital_treatment,Texas Health Presbyterian Hospital,WP-US,
+21,country_infection,Liberia,WP-US,
+21,infection_context,West Africa outbreak — community exposure helping pregnant neighbour,WP-US,
+21,arrival_mode,Commercial flights Monrovia → Brussels → Washington-Dulles → Dallas (asymptomatic en route),"WP-US; CDC-Mus",First and only community-arrival symptomatic case in US/Europe
+21,occupation,Civilian (driver),WP-US,Non-healthcare worker
+21,ebola_species,Zaire ebolavirus,WP-US,
+21,outcome,Died,WP-US,
+21,outcome_date,2014-10-08,WP-US,
+21,onward_transmission,Yes — Nina Pham (20) and Amber Vinson (22),"WP-US; CDC-MMWR",Sole confirmed nosocomial chain in US
+21,contacts_traced,177 contacts traced; no further EVD beyond Pham and Vinson,CDC-MMWR,
+22,patient_name,Amber Joy Vinson,"WP-US; CDC-MMWR",
+22,year,2014,WP-US,
+22,date_diagnosis_or_arrival,2014-10-14,WP-US,Diagnosis date
+22,country_treatment,USA,WP-US,
+22,city_treatment,"Dallas, TX then Atlanta, GA",WP-US,Transferred to Emory
+22,hospital_treatment,Texas Health Presbyterian then Emory University Hospital,WP-US,
+22,country_infection,USA,WP-US,
+22,infection_context,Nosocomial — cared for Duncan (CaseID 21),"WP-US; CDC-MMWR",
+22,arrival_mode,Already resident; flew Dallas-Cleveland-Dallas while low-grade fever 13 Oct,WP-US,Triggered contact-tracing on Frontier 1143
+22,occupation,Nurse,WP-US,
+22,ebola_species,Zaire ebolavirus,WP-US,
+22,outcome,Recovered,WP-US,
+22,outcome_date,2014-10-28,WP-US,Discharged
+22,onward_transmission,None,CDC-MMWR,"Cleveland flight contacts traced, none infected"
+23,patient_name,Sudanese male UN volunteer (name not released),"AJ-Lpz; NCBI-DE",
+23,year,2014,AJ-Lpz,
+23,date_diagnosis_or_arrival,2014-10-09,NCBI-DE,Arrival Leipzig
+23,country_treatment,Germany,AJ-Lpz,
+23,city_treatment,Leipzig,AJ-Lpz,
+23,hospital_treatment,St Georg Klinikum,AJ-Lpz,
+23,country_infection,Liberia,AJ-Lpz,
+23,infection_context,West Africa outbreak — UN mission (UNMIL/UNMEER),AJ-Lpz,
+23,arrival_mode,Medical evacuation,AJ-Lpz,
+23,occupation,UN field worker (medical),AJ-Lpz,
+23,ebola_species,Zaire ebolavirus,AJ-Lpz,
+23,outcome,Died,AJ-Lpz,
+23,outcome_date,2014-10-14,AJ-Lpz,
+23,onward_transmission,None,AJ-Lpz,
+24,patient_name,French MSF nurse (name withheld),"CIDRAP-FR; MSF-Rep",
+24,year,2014,CIDRAP-FR,
+24,date_diagnosis_or_arrival,2014-09-18,CIDRAP-FR,Diagnosis 16 Sep; arrival Paris 18 Sep
+24,country_treatment,France,CIDRAP-FR,
+24,city_treatment,Saint-Mandé (Paris suburb),CIDRAP-FR,
+24,hospital_treatment,Hôpital d'instruction des armées Bégin,CIDRAP-FR,
+24,country_infection,Liberia,CIDRAP-FR,
+24,infection_context,"West Africa outbreak — MSF, Monrovia (ELWA-3)",CIDRAP-FR,
+24,arrival_mode,Medical evacuation,CIDRAP-FR,
+24,occupation,Nurse (MSF),CIDRAP-FR,
+24,ebola_species,Zaire ebolavirus,CIDRAP-FR,
+24,outcome,Recovered,CIDRAP-FR,
+24,outcome_date,2014-10-04,CIDRAP-FR,Discharged
+24,treatment_received,Favipiravir + ZMab + convalescent plasma,CIDRAP-FR,
+24,onward_transmission,None,CIDRAP-FR,
+25,patient_name,Craig Spencer,WP-US,
+25,year,2014,WP-US,
+25,date_diagnosis_or_arrival,2014-10-23,WP-US,Diagnosis date
+25,country_treatment,USA,WP-US,
+25,city_treatment,New York City,WP-US,
+25,hospital_treatment,Bellevue Hospital Center,WP-US,
+25,country_infection,Guinea,WP-US,
+25,infection_context,"West Africa outbreak — MSF, Guéckédou",WP-US,
+25,arrival_mode,"Commercial flight (already returned to NYC, monitored himself, reported fever)",WP-US,
+25,occupation,Physician (MSF),WP-US,
+25,ebola_species,Zaire ebolavirus,WP-US,
+25,outcome,Recovered,WP-US,
+25,outcome_date,2014-11-11,WP-US,Discharged
+25,onward_transmission,None,WP-US,"NYC contacts traced (bowling alley, subway); no secondary cases"
+26,patient_name,Félix Báez Sarría,"CBC-Baez; WHO-Baez; TL-CH",
+26,year,2014,CBC-Baez,
+26,date_diagnosis_or_arrival,2014-11-20,TL-CH,Arrival Geneva
+26,country_treatment,Switzerland,CBC-Baez,
+26,city_treatment,Geneva,TL-CH,
+26,hospital_treatment,Hôpitaux universitaires de Genève (HUG),TL-CH,
+26,country_infection,Sierra Leone,CBC-Baez,
+26,infection_context,"West Africa outbreak — Cuban Henry Reeve Brigade, Kerry Town",WHO-Baez,
+26,arrival_mode,Medical evacuation (Phoenix Air),CBC-Baez,
+26,occupation,Physician (Cuban medical brigade),WHO-Baez,
+26,ebola_species,Zaire ebolavirus,CBC-Baez,
+26,outcome,Recovered,CBC-Baez,
+26,outcome_date,2014-12-06,CBC-Baez,Discharged after 16 d isolation
+26,treatment_received,ZMab + convalescent plasma,CBC-Baez,
+26,onward_transmission,None,TL-CH,
+26,notes,First and only Ebola case treated in Switzerland during 2014-16; subsequently returned to Sierra Leone to resume work,WHO-Baez,
+27,patient_name,Fabrizio Pulvirenti,"Treccani; IlPost",
+27,year,2014,Treccani,
+27,date_diagnosis_or_arrival,2014-11-25,Treccani,Diagnosis 24 Nov in Lakka; arrival Rome 25 Nov
+27,country_treatment,Italy,Treccani,
+27,city_treatment,Rome,Treccani,
+27,hospital_treatment,Istituto Nazionale per le Malattie Infettive Lazzaro Spallanzani,Treccani,
+27,country_infection,Sierra Leone,Treccani,
+27,infection_context,"West Africa outbreak — NGO Emergency, Lakka",Treccani,
+27,arrival_mode,Medical evacuation,Treccani,
+27,occupation,Physician (Emergency),Treccani,
+27,ebola_species,Zaire ebolavirus,Treccani,
+27,outcome,Recovered,IlPost,
+27,outcome_date,2015-01-02,IlPost,Declared EVD-free
+27,onward_transmission,None,IlPost,
+27,notes,Treatment cost reported at ~€1 million; only Italian Ebola patient in 2014-16,Treccani,
+28,patient_name,French UN worker (name not released),NBC-FR,
+28,year,2014,NBC-FR,
+28,date_diagnosis_or_arrival,Early Nov 2014,NBC-FR,
+28,country_treatment,France,NBC-FR,
+28,city_treatment,Saint-Mandé (Paris),NBC-FR,
+28,hospital_treatment,Hôpital d'instruction des armées Bégin,NBC-FR,
+28,country_infection,Sierra Leone,NBC-FR,
+28,infection_context,West Africa outbreak — UN deployment,NBC-FR,
+28,arrival_mode,Medical evacuation,NBC-FR,
+28,occupation,UN field worker,NBC-FR,
+28,ebola_species,Zaire ebolavirus,NBC-FR,
+28,outcome,Recovered,NBC-FR,
+28,onward_transmission,None,NBC-FR,
+29,patient_name,Martin Salia,"WP-US; CNN-Surv; Neb",
+29,year,2014,WP-US,
+29,date_diagnosis_or_arrival,2014-11-15,WP-US,Arrival Nebraska
+29,country_treatment,USA,WP-US,
+29,city_treatment,"Omaha, NE",WP-US,
+29,hospital_treatment,Nebraska Medical Center Biocontainment Unit,WP-US,
+29,country_infection,Sierra Leone,WP-US,
+29,infection_context,"West Africa outbreak — Kissy United Methodist Hospital, Freetown",WP-US,
+29,arrival_mode,Medical evacuation (very advanced disease at evacuation),WP-US,
+29,occupation,Surgeon,WP-US,
+29,ebola_species,Zaire ebolavirus,WP-US,
+29,outcome,Died,WP-US,
+29,outcome_date,2014-11-17,WP-US,
+29,onward_transmission,None,WP-US,
+30,patient_name,Pauline Cafferkey,"WP-UK; WP-Caff; CIDRAP-Mng",
+30,year,"2014 (initial); 2015, 2016 (relapses)",WP-Caff,
+30,date_diagnosis_or_arrival,2014-12-29,WP-UK,Initial diagnosis Glasgow
+30,country_treatment,UK,WP-UK,
+30,city_treatment,Glasgow then London,WP-UK,
+30,hospital_treatment,"Gartnavel General Hospital, Glasgow then Royal Free Hospital, London (also re-admitted Oct 2015 and Feb 2016)","WP-Caff; CIDRAP-Mng",
+30,country_infection,Sierra Leone,WP-UK,
+30,infection_context,"West Africa outbreak — Save the Children, Kerry Town ETC",WP-Caff,
+30,arrival_mode,Commercial flights Freetown → Casablanca → Heathrow → Glasgow (symptoms developed after arrival),WP-Caff,
+30,occupation,Nurse; aid worker,WP-Caff,
+30,ebola_species,Zaire ebolavirus,WP-Caff,
+30,outcome,Recovered (initial Jan 2015; Nov 2015 after meningitis; Feb 2016),"WP-Caff; CIDRAP-Mng",
+30,outcome_date,2015-01-24,WP-Caff,Initial discharge
+30,treatment_received,"Convalescent plasma, MIL77, ZMab; later steroids for CNS relapse",WP-Caff,
+30,onward_transmission,None,WP-UK,
+30,contacts_traced,132 fellow returning HCWs traced; broader contact tracing on Casablanca and Heathrow flights,WP-Caff,
+30,notes,Late meningitis 9 months post-recovery with live virus in CSF — landmark evidence of CNS persistence,"WP-Caff; CIDRAP-Mng",
+31,patient_name,Corporal Anna Cross,WP-UK,
+31,year,2015,WP-UK,
+31,date_diagnosis_or_arrival,2015-03-11,WP-UK,Diagnosis date
+31,country_treatment,UK,WP-UK,
+31,city_treatment,London,WP-UK,
+31,hospital_treatment,Royal Free Hospital,WP-UK,
+31,country_infection,Sierra Leone,WP-UK,
+31,infection_context,"West Africa outbreak — British Army Op. GRITROCK, Kerry Town",WP-UK,Army Reserve deployment
+31,arrival_mode,RAF medical evacuation,WP-UK,
+31,occupation,Military healthcare worker (Army Reserve nurse),WP-UK,
+31,ebola_species,Zaire ebolavirus,WP-UK,
+31,outcome,Recovered,WP-UK,
+31,outcome_date,2015-03-27,WP-UK,Discharged
+31,treatment_received,MIL77,WP-UK,
+31,onward_transmission,None,WP-UK,
+32,patient_name,"""Preston Gorman"" (per WP-US) / Dr Lewis Rubinson (per PMC case report)","WP-US; PMC-Rub",Discordant sources; almost certainly same case
+32,year,2015,WP-US,
+32,date_diagnosis_or_arrival,2015-03-13,WP-US,Arrival NIH
+32,country_treatment,USA,WP-US,
+32,city_treatment,"Bethesda, MD",WP-US,
+32,hospital_treatment,NIH Clinical Center special clinical studies unit,WP-US,
+32,country_infection,Sierra Leone,"WP-US; PMC-Rub",
+32,infection_context,"West Africa outbreak — needlestick at Kenema Govt Hospital ETU, Partners In Health",PMC-Rub,
+32,arrival_mode,Medical evacuation,WP-US,
+32,occupation,Physician (Rubinson; ICU/critical care) per PMC; physician assistant per WP-US,"WP-US; PMC-Rub",Sources disagree on occupation
+32,ebola_species,Zaire ebolavirus,PMC-Rub,
+32,outcome,Recovered,WP-US,
+32,outcome_date,2015-04-09,WP-US,Discharged
+32,onward_transmission,None,WP-US,
+32,notes,"Anthony Fauci later described patient as ""the sickest person he had ever treated, who recovered""",WP-US,
+33,patient_name,Peter Stafford,NBC-26,
+33,year,2026,NBC-26,
+33,date_diagnosis_or_arrival,2026-05-19,"NBC-26; BMG-26",Arrival Charité Berlin
+33,country_treatment,Germany,"NBC-26; BMG-26",
+33,city_treatment,Berlin,NBC-26,
+33,hospital_treatment,Charité Universitätsmedizin Berlin — high-security isolation unit,NBC-26,
+33,country_infection,Democratic Republic of the Congo,NBC-26,
+33,infection_context,"2026 Bundibugyo outbreak — clinical care at Nyankunde Hospital, near Bunia, Ituri Province","NBC-26; WHO-2026",
+33,arrival_mode,Medical evacuation,NBC-26,
+33,occupation,Physician; missionary (US national; at Nyankunde since 2019),NBC-26,
+33,ebola_species,Bundibugyo ebolavirus,"WHO-2026; BMG-26",Confirmed 15 May 2026 by INRB Kinshasa
+33,outcome,Ongoing (clinical and virological improvement at last report 3 Jun 2026),BMG-26,
+33,treatment_received,Antiviral + supportive therapy (specific agents not yet published),BMG-26,
+33,onward_transmission,None confirmed yet,BMG-26,6 high-risk contacts in mandatory quarantine in Germany and Czech Republic (wife + 4 children + 1 other)
+33,contacts_traced,6 high-risk contacts in Germany and Czech Republic,NBC-26,
+33,notes,First Ebola medical evacuation to Europe or NA in the current 2026 outbreak; Charité has handled ≥4 prior Ebola evacuations (2014-16; 2018-20) without secondary transmission,NBC-26,
+34,patient_name,Stefano Marongiu,"ILPOST-IT15; NuovaSardegna-IT15; QS-IT15; ANSA-IT15","Dialysis nurse with Emergency NGO; name corroborated across multiple independent Italian sources in the 3-vote verification round (2026-06-03)"
+34,year,2015,"WHO-IT15; ANSA-IT15",WHO Disease Outbreak News 13 May 2015
+34,date_diagnosis_or_arrival,2015-05-13,Euronews-IT15,"Tested positive 2015-05-12; admitted to Spallanzani 2015-05-13"
+34,country_treatment,Italy,ANSA-IT15,
+34,city_treatment,Rome,ANSA-IT15,
+34,hospital_treatment,INMI Lazzaro Spallanzani,ANSA-IT15,
+34,country_infection,Sierra Leone,CBC-IT15,
+34,infection_context,"Infected at the Emergency NGO hospital in Goderich, near Freetown, Sierra Leone (worked 2015-02-14 to 2015-05-06)","NuovaSardegna-IT15; QS-IT15","Symptom onset 2015-05-10 in Sassari; confirmed by Spallanzani 2015-05-12"
+34,arrival_mode,Medical air evacuation,ANSA-IT15,
+34,occupation,"Nurse (aid worker, Emergency NGO)",CBC-IT15,
+34,ebola_species,Zaire ebolavirus,ANSA-IT15,2014–16 West Africa strain
+34,outcome,Recovered,ANSA-IT15,
+34,outcome_date,2015-06-09,ANSA-IT15,Declared cured / discharged early June 2015
+34,treatment_received,High-isolation supportive care; experimental antivirals including favipiravir,"QS-IT15; ILPOST-IT15",
+34,onward_transmission,None,ANSA-IT15,
+34,notes,"Second Italian EVD case treated at Spallanzani (first was Fabrizio Pulvirenti, CaseID 27)",ANSA-IT15,
+35,patient_name,Nadezhda Makovetskaya (named only in Western reporting),"WaPo-Rus; Regnum-Rus","Russian-language sources leave the technician unnamed"
+35,year,1996,RU-WP-Ebola,
+35,date_diagnosis_or_arrival,1996,RU-WP-Ebola,Exact date not established; care sought late
+35,country_treatment,Russia,RU-WP-Ebola,
+35,city_treatment,"Sergiev Posad, Moscow Oblast",RU-WP-Ebola,
+35,hospital_treatment,"Virology Centre, Institute of Microbiology, Russian Ministry of Defence",RU-WP-Ebola,Military research facility
+35,country_infection,Russia,RU-WP-Ebola,Lab-acquired on Russian soil
+35,infection_context,Finger prick / needlestick while injecting laboratory animals,"RU-WP-Ebola; Regnum-Rus","RU-WP says injecting rabbits; WaPo describes drawing blood from infected animals — discordant"
+35,arrival_mode,Already resident,RU-WP-Ebola,
+35,occupation,Laboratory technician (reportedly 26 years' experience),Regnum-Rus,
+35,ebola_species,Zaire ebolavirus,WaPo-Rus,
+35,outcome,Died,RU-WP-Ebola,
+35,outcome_date,1996,RU-WP-Ebola,Died after delaying medical help
+35,treatment_received,Unknown,RU-WP-Ebola,
+35,onward_transmission,None,RU-WP-Ebola,
+35,notes,"One of only two known fatal lab-acquired EVD cases worldwide (other = Vector 2004, CaseID 36); former Soviet bioweapons-research facility",WaPo-Rus,
+36,patient_name,Antonina Presnyakova (46),"RG-Rus04; CIDRAP-Rus04; RU-WP-Ebola",
+36,year,2004,RG-Rus04,
+36,date_diagnosis_or_arrival,2004-05-05,RU-WP-Ebola,Date of needlestick
+36,country_treatment,Russia,RG-Rus04,
+36,city_treatment,"Koltsovo, Novosibirsk Oblast (Siberia)",RU-WP-Ebola,
+36,hospital_treatment,Vector State Research Center of Virology and Biotechnology (BSL-4),"CIDRAP-Rus04; RU-WP-Ebola",
+36,country_infection,Russia,RG-Rus04,Lab-acquired on Russian soil
+36,infection_context,Needlestick through two layers of gloves while injecting/bleeding infected guinea pigs in a BSL-4 lab,"CIDRAP-Rus04; RU-WP-Ebola",
+36,arrival_mode,Already resident,RU-WP-Ebola,
+36,occupation,"Senior laboratory technician, dept of especially dangerous viral infections",RU-WP-Ebola,
+36,ebola_species,Zaire ebolavirus,Sci-Rus04,
+36,outcome,Died,RG-Rus04,
+36,outcome_date,2004-05-19,RU-WP-Ebola,~2 weeks after exposure
+36,treatment_received,"Hospitalised, supportive care",CIDRAP-Rus04,
+36,onward_transmission,None,CIDRAP-Rus04,
+36,notes,Second of the two fatal lab-acquired EVD cases worldwide; Vector is a former Soviet bioweapons facility and a WHO smallpox repository,CIDRAP-Rus04,
