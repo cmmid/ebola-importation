@@ -1,0 +1,33 @@
+CaseID,Variable,Value,Source,Notes
+37,patient_name,3 of 186 animal handlers (Philippine monkey-export facilities),"Rev-PH; WP-Reston; Stan-Filo",Names not public
+37,year,1989-1990,"Stan-Filo; JID-Quar",
+37,date_diagnosis_or_arrival,Detected by serology 1989-1990,"Rev-PH; JID-Quar",Screened after RESTV found in exported macaques
+37,country_treatment,Philippines,"Rev-PH",No clinical admission needed (asymptomatic)
+37,city_treatment,"Laguna province (Ferlite Farms) and other export facilities, Luzon","Stan-Filo; JID-Quar",
+37,hospital_treatment,None,"Rev-PH",Asymptomatic — serologically screened in situ
+37,country_infection,Philippines,"Rev-PH; Stan-Filo",Source facility of the 1989-90 US Reston epizootic
+37,infection_context,"Occupational exposure to RESTV-infected cynomolgus macaques at monkey-export breeding/holding facilities","JID-Quar; Stan-Filo",
+37,arrival_mode,Already resident,"Rev-PH",Filipino nationals — infection on Philippine soil
+37,occupation,Animal handlers / monkey-facility workers,"Stan-Filo; JID-Quar",
+37,ebola_species,Reston ebolavirus,"WP-Reston; Rev-PH",First filovirus found outside Africa (1989)
+37,outcome,Asymptomatic seroconversion,"Rev-PH; Stan-Filo",None developed filovirus-related illness
+37,onward_transmission,None,"WP-Reston; Rev-PH",Reston ebolavirus not pathogenic in humans
+37,contacts_traced,"186 handlers screened, 3 seropositive (2%); at Ferlite Farms 22% IFAT-positive and 4 of 5 animal-hospital staff positive","Rev-PH; Stan-Filo",
+37,notes,"Philippine source-facility counterpart to the US Reston, Virginia epizootic (the US-side handler seroconversions are separate CaseIDs in the Europe/North America dataset); Ferlite Farms, Laguna shipped infected macaques to the US in Nov 1989","Stan-Filo; JID-Quar",
+38,patient_name,6 pig-industry workers (Luzon),"WHO-DON09a; WHO-DON09b; Sci-Pig",Names not public
+38,year,2008-2009,"WHO-DON09a; Euro-09",
+38,date_diagnosis_or_arrival,Seropositive announced 2009-01-23 to 2009-02-16,"WHO-DON09a; WHO-DON09b",
+38,country_treatment,Philippines,"WHO-DON09a",No clinical admission needed (asymptomatic)
+38,city_treatment,"Valenzuela City (Metro Manila); Bulacan and Pangasinan provinces, Luzon","WHO-DON09a; FAO-09",
+38,hospital_treatment,None,"WHO-DON09a",Asymptomatic — monitored under quarantine
+38,country_infection,Philippines,"WHO-DON09a",
+38,infection_context,"Occupational exposure to RESTV-infected domestic pigs (first detection of an ebolavirus in swine worldwide; pigs co-infected with PRRS virus)","FAO-09; Euro-09; Sci-Pig",
+38,arrival_mode,Already resident,"WHO-DON09a",
+38,occupation,"Backyard pig farmer; farm workers; abattoir butcher; slaughterhouse worker","WHO-DON09a; WHO-DON09b",
+38,ebola_species,Reston ebolavirus,"WP-Reston; Euro-09",
+38,outcome,Asymptomatic seroconversion,"WHO-DON09a; Sci-Pig","All 6 in good health; no significant illness in prior 12 months"
+38,outcome_date,2009,"WHO-DON09b",Cleared — no illness developed
+38,treatment_received,None,"WHO-DON09a",Asymptomatic; quarantine and monitoring only
+38,onward_transmission,None,"WP-Reston; WHO-DON09a",Reston ebolavirus not pathogenic in humans
+38,contacts_traced,"6 seropositive humans confirmed by DOH (2009-01-23: 1 Valenzuela backyard farmer; 2009-01-30: 2 Bulacan + 1 Pangasinan farm workers + 1 Pangasinan butcher; 2009-02-16: 1 slaughterhouse worker). A wider seroepidemiologic survey later reported a larger number of seropositive pig/abattoir workers","WHO-DON09a; WHO-DON09b; WPSAR-Risk; Seroswine","See methods limitation on the 6 vs ~100 discrepancy"
+38,notes,"First known transmission of an ebolavirus from pigs to humans; >6,000 pigs culled (DA-BAI, March 2009); 2008 was the first-ever detection of Reston in swine","Sci-Pig; FAO-09",

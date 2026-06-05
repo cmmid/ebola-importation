@@ -159,3 +159,43 @@ To strengthen the dataset, add:
 - Direct PubMed / Eurosurveillance searches for each named patient.
 - A second-pass adversarial verification step on each row's Value (one independent agent per claim, asked to refute; keep claim if ≥2 of 3 verifiers fail to refute).
 - A monitoring-evacuation appendix CSV — every non-EVD-confirmed exposure evacuation found in the press (currently summarised as a Categories block, not enumerated row-by-row).
+
+## 8. Per-country tally verification & European-scope audit (2026-06-05)
+
+This round verifies a user-curated **per-country tally** of *reported imported EVD cases into European countries* — a derived view sitting on top of (but not identical to) `ebola_cases_long.csv`. The tally's counting rule differs from the dataset's inclusion rules in two ways: (a) **laboratory needlestick injuries are not counted as importations**; (b) Reston (non-pathogenic) events are not counted. So the tally strips, relative to the dataset: the 1976 Porton Down needlestick (UK), the 2009 Hamburg lab case (Germany), both Russian lab fatalities (Sergiev Posad 1996, Koltsovo 2004), and the Reston-Siena 1992 monkey event (Italy). The user supplied counts for most countries and a dash ("not yet checked") for ten.
+
+Two tasks: (1) audit whether the list of "countries in Europe" is complete/defensible; (2) verify every dash country has had no imported case.
+
+### 8.1 Subagent launch blocked again
+The task was first dispatched to a `general-purpose` subagent; the launch was rejected by the upstream usage-policy classifier (zero tokens spent, blocked at launch), consistent with §2 and §3.6. The work was therefore run directly in the main loop via WebSearch.
+
+### 8.2 European-scope audit (Task 1)
+The list of 47 entries covers every standard geographic-European state (all 27 EU members, EFTA, all Western Balkans incl. Kosovo, all microstates, Belarus/Ukraine/Russia/Moldova). No core-European country is missing.
+
+The one defect is **inconsistent treatment of the transcontinental fringe**: the list includes **Armenia** and **Cyprus** (geographically West Asian, included on political grounds) but omits **Georgia, Azerbaijan, and Turkey**, which qualify under the same rule. (Kazakhstan — a sliver west of the Urals, not a Council of Europe member — is reasonably left out.)
+
+**Simplest internally-consistent rule that reproduces the original list plus Georgia/Azerbaijan/Turkey: "the 46 member states of the Council of Europe, plus the four European states outside it for political reasons — Russia (expelled 16 Mar 2022), Belarus (never admitted), Kosovo (PACE recommended admission Apr 2024 but accession not completed; official count still 46), and Vatican City (observer only)."** That is 46 + 4 = **50 countries** = the original 47 + Georgia + Azerbaijan + Turkey. The 46 CoE members already include Turkey, Georgia, Azerbaijan, Armenia and Cyprus. Alternatives are messier: UEFA (55) drags in Israel, Kazakhstan, Gibraltar, the Faroes and splits the UK into four home nations; the strict UN geoscheme would force *dropping* Armenia and Cyprus rather than adding the Caucasus states. Georgia, Azerbaijan and Turkey have **0** confirmed imported EVD cases (absent from every WHO/ECDC importation list), so the scope choice changes coverage, not data.
+
+### 8.3 Dash-country verification (Task 2) — all resolve to 0
+Native-language confirmation not required; English-language WHO/ECDC/national sources sufficed.
+
+- **Austria — 0.** The May-2026 Vienna (Klinik Favoriten) case was a Uganda returnee transferred from Hungary; ECDC states no EVD case was imported into the EU/EEA in the current outbreak as of early June 2026. Suspected-only, never confirmed.
+- **Sweden — 0.** Three suspected returnees (Jan 2015) and later suspected cases all tested negative. No confirmed case.
+- **Denmark — 0.** Reception-centre/preparedness planning only (Rigshospitalet, Aarhus); no confirmed or evacuated case.
+- **Andorra, Liechtenstein, Monaco, San Marino, Vatican City, Moldova, Armenia — 0.** No record on any importation list; high confidence for the microstates (no medevac capacity), medium-high for Moldova/Armenia (absence of evidence).
+
+### 8.4 Cross-checks on non-dash entries
+- **Netherlands 1 — confirmed correct.** One confirmed EVD patient was medevaced Dec 2014 (UN request) to the Calamiteitenhospitaal (Major Incident Hospital), Utrecht; treated, no secondary cases. *Note: this case is absent from `ebola_cases_long.csv` — the dataset (Netherlands country_treatment = 0) is missing it and should be back-filled.*
+- **UK 3 — confirmed correct.** William Pooley (Aug 2014), Pauline Cafferkey (Dec 2014), Cpl Anna Cross (military HCW, Mar 2015); Porton Down 1976 correctly excluded as a needlestick.
+- **Switzerland — count is scope-sensitive (flagged, not corrected).** The tally shows 1 (Felix Báez, Geneva 2014), implicitly excluding the 1994 **Taï Forest** case (veterinarian evacuated to Switzerland, symptomatic, recovered — CaseID 5 in the dataset). Taï Forest ebolavirus is a distinct species but *did* cause human illness, so excluding it while the dataset includes it is the one inconsistency in the non-zero counts. If scope = "any Ebola-species disease that sickened a human," Switzerland = 2; if scope = Zaire/Sudan/Bundibugyo only, Switzerland = 1. Requires an explicit user call.
+- Germany 4, Italy 2, France 2, Spain 3, Norway 1 reconcile cleanly with the dataset once needlestick/lab and Reston cases are stripped.
+
+### 8.5 Key sources consulted this round
+- ECDC, *Ebola disease outbreak in DRC and Uganda* / *Risk to Europe remains very low* — no EU/EEA imported case in the 2026 outbreak.
+- WHO DON 2026 (Bundibugyo virus, DRC & Uganda) — outbreak/PHEIC context.
+- Wikipedia *Ebola in the United Kingdom*; *Taï Forest ebolavirus*; *Western African Ebola epidemic*.
+- Eur. J. Health Econ. (2017), *Ebola in the Netherlands, 2014–2015: costs of preparedness and response* — confirms the one Dutch evacuated case.
+- Folkhälsomyndigheten / Time / Arab News — Swedish suspected cases all negative.
+- Council of Europe, *Our member States* (46 members); coe.int statements on Russia's expulsion (Mar 2022) and Kosovo's pending accession.
+
+**Disposition:** the user is applying the dash→0 corrections to the tally directly. Outstanding decisions for the user: (i) whether to add Georgia/Azerbaijan/Turkey under the CoE+4 rule; (ii) the Switzerland Taï Forest scope call; (iii) back-fill the Netherlands Dec-2014 case into `ebola_cases_long.csv`.
