@@ -19,12 +19,20 @@ world = as.data.table(map_data("world"))
 world = merge(world, counts, by = "region", all.x = TRUE)
 setorder(world, order)   # restore polygon point order after the merge
 
+# Label positions: centroid of each country within the plotted window
+labels = world[!is.na(N) & long %between% c(-120, 32) & lat %between% c(25, 72),
+    .(long = mean(long), lat = mean(lat), N = N[1]), by = region]
+
 map_plot = ggplot(world, aes(long, lat, group = group, fill = N)) +
     geom_polygon(colour = "grey70", linewidth = 0.1) +
-    scale_fill_viridis_c(name = "Cases", na.value = "grey92") +
+    geom_text(data = labels, aes(long, lat, label = N), inherit.aes = FALSE,
+        size = 3, fontface = "bold", colour = "grey15") +
+    scale_fill_viridis_c(name = "Cases", na.value = "grey92",
+        guide = guide_coloursteps()) +
     coord_quickmap(xlim = c(-120, 32), ylim = c(25, 72)) +
     labs(title = "Imported Ebola cases by country of treatment") +
     theme_void()
+map_plot
 
 ggsave("map_cases.png", map_plot, width = 11, height = 6, dpi = 150)
 
@@ -41,12 +49,14 @@ pyr = pyr_dat[, .(N = .N), by = .(age_grp, Sex)]
 pyr[Sex == "Male", N := -N]   # males drawn to the left
 
 pyramid_plot = ggplot(pyr, aes(age_grp, N, fill = Sex)) +
-    geom_col(width = 0.9) +
+    geom_col(width = 0.7, linewidth = 0.2, colour = "black") +
     coord_flip() +
     scale_y_continuous(labels = function(x) abs(x), limits = c(-9, 9), breaks = seq(-6, 6, 2)) +
+    scale_fill_manual(values = c("#cc2211", "#99ccff")) +
     labs(x = "Age group", y = "Cases",
-         title = "Age and sex distribution") +
-    theme_minimal()
+         title = "Age and sex distribution", fill = NULL) +
+    theme_minimal() +
+    theme(legend.position = c(0.8, 0.8)) 
 
 ggsave("pyramid_age_sex.png", pyramid_plot, width = 7, height = 5, dpi = 150)
 
@@ -207,8 +217,9 @@ inc_wk = inc_wk[epiweek >= "2014-01-01"]
 timeline = ggplot(inc_wk) +
     geom_col(aes(x = epiweek, y = cases, fill = country), 
         colour = "black", linewidth = 0.1, position = position_stack(), width = 7) +
-    geom_point(data = cases2, aes(x = epiweek, y = y, shape = medevac), size = 2.5) +
+    geom_point(data = cases2, aes(x = epiweek, y = y, shape = medevac), size = 2.3) +
     geom_point(data = cases2, aes(x = epiweek, y = y, colour = country, shape = medevac)) +
+    scale_fill_manual(values = c("#ffe4cc", "#66cc88", "#4040b0"), aesthetics = c("fill", "colour")) +
     guides(colour = guide_none()) +
     theme_classic() +
     theme(legend.position = c(0.75, 0.75), axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
