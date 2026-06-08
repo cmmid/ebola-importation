@@ -22,13 +22,16 @@ setorder(world, order)   # restore polygon point order after the merge
 # Label positions: centroid of each country within the plotted window
 labels = world[!is.na(N) & long %between% c(-120, 32) & lat %between% c(25, 72),
     .(long = mean(long), lat = mean(lat), N = N[1]), by = region]
+labels[region == "Netherlands", lat := lat + 3]
+labels[region == "Switzerland", long := long + 4.5]
+labels[region == "Norway", long := long - 6]
+labels[region == "Norway", lat := lat - 5]
 
 map_plot = ggplot(world, aes(long, lat, group = group, fill = N)) +
     geom_polygon(colour = "grey70", linewidth = 0.1) +
-    geom_text(data = labels, aes(long, lat, label = N), inherit.aes = FALSE,
-        size = 3, fontface = "bold", colour = "grey15") +
-    scale_fill_viridis_c(name = "Cases", na.value = "grey92",
-        guide = guide_coloursteps()) +
+    geom_label(data = labels, aes(long, lat, label = N), inherit.aes = FALSE,
+        size = 2, fontface = "bold", colour = "black", fill = "white") +
+    scale_fill_viridis_c(name = "Cases", na.value = "grey92") +
     coord_quickmap(xlim = c(-120, 32), ylim = c(25, 72)) +
     labs(title = "Imported Ebola cases by country of treatment") +
     theme_void()
@@ -217,12 +220,14 @@ inc_wk = inc_wk[epiweek >= "2014-01-01"]
 timeline = ggplot(inc_wk) +
     geom_col(aes(x = epiweek, y = cases, fill = country), 
         colour = "black", linewidth = 0.1, position = position_stack(), width = 7) +
-    geom_point(data = cases2, aes(x = epiweek, y = y, shape = medevac), size = 2.3) +
+    geom_point(data = cases2, aes(x = epiweek, y = y, shape = medevac), colour = "white", size = 3) +
+    geom_point(data = cases2, aes(x = epiweek, y = y, shape = medevac), colour = "black", size = 2.3) +
     geom_point(data = cases2, aes(x = epiweek, y = y, colour = country, shape = medevac)) +
     scale_fill_manual(values = c("#ffe4cc", "#66cc88", "#4040b0"), aesthetics = c("fill", "colour")) +
     guides(colour = guide_none()) +
     theme_classic() +
-    theme(legend.position = c(0.75, 0.75), axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
+    theme(legend.position = c(0.85, 0.8), legend.box = "horizontal",
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
     scale_x_date(date_breaks = "months", date_labels = "%b %Y", expand = expansion(c(0.01, 0))) +
     scale_y_continuous(expand = expansion(c(0, 0.02)), breaks = (1:8) * 200) +
     labs(x = NULL, y = "Confirmed, probable, and suspected cases by week", fill = "Country", colour = NULL, shape = "Medevac")
